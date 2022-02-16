@@ -143,9 +143,10 @@ main{
 }
 
 .time{
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #fff;
     padding-right: 3rem;
+    letter-spacing: .2rem;
 }
 
 
