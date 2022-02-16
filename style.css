@@ -77,3 +77,42 @@ main{
 .start-btn:hover{
     background-color: skyblue;
 }
+
+.modal{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.reference-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.reference-img{
+    width: 40rem;
+    height: 50rem;
+}
+
+.buttons{
+    /* position: absolute; */
+    margin-top: 2rem;
+}
+
+.btn{
+    height: 4rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+
