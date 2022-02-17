@@ -6,7 +6,7 @@ const time = document.querySelector('.time')
 const img = document.querySelector('.reference-img')
 
 startBtn.addEventListener('click', () => {
-    time.innerHTML = `<span>${interval.value}:00</span>`
+    // time.innerHTML = interval.value
     modal.classList.toggle('change')
 })
 
@@ -14,14 +14,44 @@ stopBtn.addEventListener('click', () => {
     modal.classList.toggle('change')
 })
 
-let timer = interval.value * 2
-function countdown(){
-    if(timer === 0){
-        timer = 300
-        img.src = "ley-bowen-.jpg"
+const timer = parseInt(interval.value / 100) * 60 + interval.value % 100
+
+//Conversão para segundos
+let duration = timer
+
+let minutes
+let seconds
+
+function startTimer(){
+    setTimer()
+
+    time.textContent = minutes + ":" + seconds
+
+    seconds--
+    if(seconds === 0){
+        minutes--
+        seconds = 60
     }
-    time.innerHTML = `<span>${timer--}</span>`
-    console.log(timer)
+
+    if(seconds < 0){
+        duration = timer
+        setTimer()
+        time.textContent = minutes + ":" + seconds
+    }
+
+    duration--
 }
 
-setInterval(countdown, 1000)
+function setTimer(){
+    minutes = parseInt(duration / 60)
+    seconds = parseInt(duration % 60)
+
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds; 
+}
+
+function changeReference(){
+    
+}
+
+setInterval(startTimer, 1000)
