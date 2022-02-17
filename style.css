@@ -105,6 +105,7 @@ main{
 .reference-img{
     width: 40rem;
     height: 50rem;
+    object-fit: cover;
 }
 
 .buttons{

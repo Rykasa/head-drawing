@@ -1,14 +1,130 @@
 const references = [
     {
-        id: 0,
-        src: "mikasa.jpg",
+        id: 1,
+        src: 'mikasa.jpg',
         view: "3/4"
     },
     {
-        id: 1,
-        src: "ley-bowen-.jpg",
+        id: 2,
+        src: 'ley-bowen-.jpg',
         view: "3/4"
-    }
+    },
+    {
+        id: 3,
+        src: 'https://i.pinimg.com/564x/1a/3e/f0/1a3ef030100f214e05553196dd66254d.jpg',
+        view: "3/4"
+    },
+    {
+        id: 4,
+        src: 'https://i.pinimg.com/564x/e2/d4/2c/e2d42c8ab021fdfa75455a0608bbf38b.jpg',
+        view: "profile"
+    },
+    {
+        id: 5,
+        src: 'https://i.pinimg.com/564x/76/16/cb/7616cbf58299d7dd42380d2971bf9578.jpg',
+        view: "profile"
+    },
+    {
+        id: 6,
+        src: 'https://i.pinimg.com/564x/c4/4d/90/c44d90bc75525fcdf9814535d80322a0.jpg',
+        view: "3/4"
+    },
+    {
+        id: 7,
+        src: 'https://i.pinimg.com/564x/15/2b/13/152b138f07dbab9cdbeb179a80e0410c.jpg',
+        view: "3/4"
+    },
+    {
+        id: 8,
+        src: 'https://i.pinimg.com/564x/5b/a7/a8/5ba7a8fb3ac4f4eb0196f0930da92897.jpg',
+        view: "3/4"
+    },
+    {
+        id: 9,
+        src: 'https://i.pinimg.com/564x/b7/b0/17/b7b01715c1ff17e8996d35b5e137904a.jpg',
+        view: "front"
+    },
+    {
+        id: 10,
+        src: 'https://i.pinimg.com/564x/b9/19/45/b919452a9776944bd44e7699ba4950c5.jpg',
+        view: "profile"
+    },
+    {
+        id: 11,
+        src: 'https://i.pinimg.com/564x/c4/aa/3e/c4aa3ef90bde0e55ed76e224d4bdbd94.jpg',
+        view: "front"
+    },
+    {
+        id: 12,
+        src: 'https://i.pinimg.com/564x/bb/70/c0/bb70c015c4e0118a67985351fe913501.jpg',
+        view: "3/4"
+    },
+    {
+        id: 13,
+        src: 'https://i.pinimg.com/564x/fa/6f/bb/fa6fbb4b18405a957ecf904fd3a0a979.jpg',
+        view: "profile"
+    },
+    {
+        id: 14,
+        src: 'https://i.pinimg.com/564x/4b/81/76/4b81764283629f8e9143a0dde50c2ed1.jpg',
+        view: "profile"
+    },
+    {
+        id: 15,
+        src: 'https://i.pinimg.com/564x/36/42/14/36421406742fc1007951cb6a6fdc9fef.jpg',
+        view: "3/4"
+    },
+    {
+        id: 16,
+        src: 'https://i.pinimg.com/564x/75/a4/1d/75a41d14fe75ad2b077f235333409519.jpg',
+        view: "3/4"
+    },
+    {
+        id: 17,
+        src: 'https://i.pinimg.com/564x/fa/45/07/fa4507aeedb19b5a942db15f514f4a1a.jpg',
+        view: "3/4"
+    },
+    {
+        id: 18,
+        src: 'https://i.pinimg.com/564x/98/96/47/98964775c94aac50e91c58cd05cfdf40.jpg',
+        view: "front"
+    },
+    {
+        id: 19,
+        src: 'https://i.pinimg.com/564x/88/b9/fc/88b9fc6675b1c59415cbd65bf99cbf16.jpg',
+        view: "profile"
+    },
+    {
+        id: 20,
+        src: 'https://i.pinimg.com/564x/48/4b/ff/484bff6c38d71fafb3c9d3b446768380.jpg',
+        view: "profile"
+    },
+    {
+        id: 21,
+        src: 'https://i.pinimg.com/564x/c0/56/82/c056820b679a418e6487faa6977c5d83.jpg',
+        view: "3/4"
+    },
+    {
+        id: 22,
+        src: 'https://i.pinimg.com/564x/6d/28/0e/6d280e1290f5e6b3992054369caacd8d.jpg',
+        view: "front"
+    },
+    {
+        id: 23,
+        src: 'https://i.pinimg.com/564x/41/f6/1b/41f61b4c9030ed37ac672ad4fd6fc816.jpg',
+        view: "3/4"
+    },
+    {
+        id: 24,
+        src: 'https://i.pinimg.com/564x/a8/32/12/a83212e7d37fe434eb42f50499faaae0.jpg',
+        view: "3/4"
+    },
+    {
+        id: 25,
+        src: 'https://i.pinimg.com/564x/64/52/70/6452709e8747e846bed5d45f48a48c90.jpg',
+        view: "3/4"
+    },
+    
 ]
 
 const min = document.querySelector('.minute')
@@ -58,8 +174,8 @@ function changeReference(){
     img.src = references[Math.floor(Math.random() * references.length)].src
 }
 
-let seconds = 0
-let minutes = 5
+let seconds
+let minutes 
 
 let int
 
