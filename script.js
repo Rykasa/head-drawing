@@ -23,58 +23,63 @@ const skipBtn = document.querySelector('.skip-btn')
 startBtn.addEventListener('click', () => {
     modal.classList.toggle('change')
     changeReference()
+    
+    start()
 })
 
 stopBtn.addEventListener('click', () => {
     modal.classList.toggle('change')
-    duration = timer
+    clearInterval(int)
 })
 
-skipBtn.addEventListener('click', () =>{
-    changeReference()
-    duration = timer
-    startTimer()
+pauseBtn.addEventListener('click', () =>{
+    clearInterval(int)
 })
-
-//Conversão para segundos
-let timer = parseInt(interval.value / 100) * 60 + interval.value % 100
-let duration = timer
-let minutes
-let seconds
-
-function startTimer(){
-    setTimer()
-
-    time.textContent = minutes + ":" + seconds
-
-    seconds--
-    if(seconds === 0){
-        minutes--
-        seconds = 60
-    }
-
-    if(seconds < 0){
-        changeReference()
-        duration = timer
-        setTimer()
-        time.textContent = minutes + ":" + seconds
-    }
-
-    duration--
-}
-
-function setTimer(){
-    minutes = parseInt(duration / 60)
-    seconds = parseInt(duration % 60)
-
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds; 
-}
 
 function changeReference(){
     img.src = references[Math.floor(Math.random() * references.length)].src
 }
 
-setInterval(startTimer, 1000)
+let seconds = 0
+let minutes = 2
 
-console.log(references)
+let int
+
+function start(){
+    int = setInterval(watch, 1000)
+}
+
+function pause(){
+    clearInterval(int)
+}
+
+function stop(){
+    clearInterval(int)
+    seconds = 0
+    minutes = 0
+    time.textContent = "00:00"
+}
+
+function watch(){
+    seconds--
+    if(seconds < 0){
+        minutes--
+        seconds = 60
+    }
+
+    if(seconds == 0 && minutes == 0){
+        minutes = 5
+        seconds = 0
+        changeReference()
+    }
+
+    time.textContent = twoDigits(minutes) + ":" + twoDigits(seconds)
+}
+
+function twoDigits(digit){
+    if(digit < 10){
+        return "0" + digit
+    }else{
+        return digit
+    }
+}
