@@ -124,7 +124,57 @@ const references = [
         src: 'https://i.pinimg.com/564x/64/52/70/6452709e8747e846bed5d45f48a48c90.jpg',
         view: "3/4"
     },
-    
+    {
+        id: 26,
+        src: 'https://i.pinimg.com/564x/75/d9/34/75d934fbf879358015d1fb40a24df956.jpg',
+        view: "3/4"
+    },
+    {
+        id: 27,
+        src: 'https://i.pinimg.com/564x/50/12/a8/5012a8b870d6a7db9fde5e727f57344d.jpg',
+        view: "profile"
+    },
+    {
+        id: 28,
+        src: 'https://i.pinimg.com/564x/31/8a/82/318a824055cf945b32f82e50df173972.jpg',
+        view: "3/4"
+    },
+    {
+        id: 29,
+        src: 'https://i.pinimg.com/564x/32/f4/e4/32f4e417a05e1685d80744189d2c5ec6.jpg',
+        view: "3/4"
+    },
+    {
+        id: 30,
+        src: 'https://i.pinimg.com/564x/af/c5/f6/afc5f65e21ecb28415064d9f9bc95baa.jpg',
+        view: "3/4"
+    },
+    {
+        id: 31,
+        src: 'https://i.pinimg.com/564x/e4/4d/ac/e44dac795f8e20e46db901f44dccb073.jpg',
+        view: "profile"
+    },
+    {
+        id: 32,
+        src: 'https://i.pinimg.com/564x/c7/8c/ae/c78cae03b34c58ad2df34411940107c6.jpg',
+        view: "3/4"
+    },
+    {
+        id: 33,
+        src: 'https://i.pinimg.com/564x/f2/ff/3b/f2ff3b0804bf1b1311520b9841de886c.jpg',
+        view: "3/4"
+    },
+    {
+        id: 34,
+        src: 'https://i.pinimg.com/564x/3c/ce/2b/3cce2b6a92bccaf97a7bdc08cfbd32b8.jpg',
+        view: "3/4"
+    },
+    {
+        id: 35,
+        src: 'https://i.pinimg.com/564x/10/0b/53/100b53f7eb60ec7dd6847d52383ce58c.jpg',
+        view: "3/4"
+    }
+
 ]
 
 const min = document.querySelector('.minute')
