@@ -19,6 +19,8 @@ const time = document.querySelector('.time')
 const img = document.querySelector('.reference-img')
 const pauseBtn = document.querySelector('.pause-btn')
 const skipBtn = document.querySelector('.skip-btn')
+const resume = document.querySelector('.continue')
+const continueBtn = document.querySelector('.continue-btn')
 
 startBtn.addEventListener('click', () => {
     modal.classList.toggle('change')
@@ -30,10 +32,26 @@ startBtn.addEventListener('click', () => {
 stopBtn.addEventListener('click', () => {
     modal.classList.toggle('change')
     clearInterval(int)
+    minutes = 5
+    seconds = 0
 })
 
-pauseBtn.addEventListener('click', () =>{
+pauseBtn.addEventListener('click', () => {
     clearInterval(int)
+    resume.classList.add('change')
+})
+
+continueBtn.addEventListener('click', () => {
+    resume.classList.remove('change')
+    start()
+})
+
+skipBtn.addEventListener('click', () => {
+    clearInterval(int)
+    changeReference()
+    minutes = 5
+    seconds = 0
+    start()
 })
 
 function changeReference(){
@@ -41,16 +59,12 @@ function changeReference(){
 }
 
 let seconds = 0
-let minutes = 2
+let minutes = 5
 
 let int
 
 function start(){
     int = setInterval(watch, 1000)
-}
-
-function pause(){
-    clearInterval(int)
 }
 
 function stop(){
