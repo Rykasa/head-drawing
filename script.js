@@ -11,7 +11,8 @@ const references = [
     }
 ]
 
-const interval = document.querySelector('.interval')
+const min = document.querySelector('.minute')
+const sec = document.querySelector('.second')
 const startBtn = document.querySelector('.start-btn')
 const stopBtn = document.querySelector('.stop-btn')
 const modal = document.querySelector('.modal')
@@ -25,15 +26,14 @@ const continueBtn = document.querySelector('.continue-btn')
 startBtn.addEventListener('click', () => {
     modal.classList.toggle('change')
     changeReference()
-    
+    minutes = min.value
+    seconds = sec.value
     start()
 })
 
 stopBtn.addEventListener('click', () => {
     modal.classList.toggle('change')
     clearInterval(int)
-    minutes = 5
-    seconds = 0
 })
 
 pauseBtn.addEventListener('click', () => {
@@ -49,8 +49,8 @@ continueBtn.addEventListener('click', () => {
 skipBtn.addEventListener('click', () => {
     clearInterval(int)
     changeReference()
-    minutes = 5
-    seconds = 0
+    minutes = min.value
+    seconds = sec.value
     start()
 })
 
@@ -82,8 +82,8 @@ function watch(){
     }
 
     if(seconds == 0 && minutes == 0){
-        minutes = 5
-        seconds = 0
+        minutes = min.value
+        seconds = sec.value
         changeReference()
     }
 
