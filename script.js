@@ -228,8 +228,57 @@ const references = [
         id: 46,
         src: 'https://i.pinimg.com/564x/4e/fd/c3/4efdc337268bf7b4f754a5e76ce81ec4.jpg',
         view: "3/4"
+    },
+    {
+        id: 47,
+        src: 'https://i.pinimg.com/564x/b0/76/f3/b076f359fc36d7c8358dca96cb225358.jpg',
+        view: "3/4"
+    },
+    {
+        id: 48,
+        src: 'https://i.pinimg.com/564x/ed/cb/b9/edcbb969e8268e4c525967375c1e3a52.jpg',
+        view: "3/4"
+    },
+    {
+        id: 49,
+        src: 'https://i.pinimg.com/564x/f9/0c/29/f90c292ba0b0bd205bae073b313c4b49.jpg',
+        view: "3/4"
+    },
+    {
+        id: 50,
+        src: 'https://i.pinimg.com/564x/ba/fc/90/bafc909e9201b613d00111d3f67ee6fc.jpg',
+        view: "3/4"
+    },
+    {
+        id: 51,
+        src: 'https://i.pinimg.com/564x/b9/1a/ae/b91aae728d0be1b58e89292d5d9a4401.jpg',
+        view: "3/4"
+    },
+    {
+        id: 52,
+        src: 'https://i.pinimg.com/564x/4a/41/86/4a41867fbedea4ad7f14eaed9462d766.jpg',
+        view: "3/4"
+    },
+    {
+        id: 53,
+        src: 'https://i.pinimg.com/564x/1c/39/8e/1c398e7d5776705ab406450c72c872ae.jpg',
+        view: "profile"
+    },
+    {
+        id: 54,
+        src: 'https://i.pinimg.com/564x/5a/c9/12/5ac91233dbc7cf4591d5d47dee7cd17c.jpg',
+        view: "profile"
+    },
+    {
+        id: 55,
+        src: 'https://i.pinimg.com/564x/bb/85/68/bb85682f38153af2022126d501108e9f.jpg',
+        view: "front"
+    },
+    {
+        id: 56,
+        src: 'https://i.pinimg.com/564x/36/21/20/3621205d85030e0a758b04d00ee477bc.jpg',
+        view: "front"
     }
-
 ]
 
 const min = document.querySelector('.minute')
