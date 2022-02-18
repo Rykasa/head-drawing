@@ -9,6 +9,28 @@ html{
     font-size: 62.5%;
 }
 
+.study{
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: .1rem .1rem 1rem #000;
+    letter-spacing: .2rem;
+    transition: color .5s;
+}
+
+.link:hover{
+    color: aqua;
+}
+
 main{
     background-color: cornflowerblue;
     height: 100vh;
