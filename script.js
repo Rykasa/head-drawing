@@ -278,6 +278,31 @@ const references = [
         id: 56,
         src: 'https://i.pinimg.com/564x/36/21/20/3621205d85030e0a758b04d00ee477bc.jpg',
         view: "front"
+    },
+    {
+        id: 57,
+        src: 'https://i.pinimg.com/564x/7d/05/a4/7d05a4d4cfad6f83ac91b1bee5dc8f42.jpg',
+        view: "profile"
+    },
+    {
+        id: 58,
+        src: 'https://i.pinimg.com/564x/17/35/87/1735870229251a3e53caba3282be8f53.jpg',
+        view: "3/4"
+    },
+    {
+        id: 59,
+        src: 'https://i.pinimg.com/564x/ab/a7/34/aba73498bfcd375366423451d4342176.jpg',
+        view: "front"
+    },
+    {
+        id: 60,
+        src: 'https://i.pinimg.com/564x/02/93/47/0293473dbfc8c44e43d58213970ab412.jpg',
+        view: "front"
+    },
+    {
+        id: 61,
+        src: 'https://i.pinimg.com/564x/60/1d/6e/601d6e42b4e15849969aa8b91ac8a4a6.jpg',
+        view: "3/4"
     }
 ]
 
