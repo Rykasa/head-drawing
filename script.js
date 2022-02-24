@@ -392,3 +392,31 @@ function twoDigits(digit){
         return digit
     }
 }
+
+// Validação de dados
+
+min.addEventListener('keypress', function(e){
+    if(!checkChar(e)){
+        e.preventDefault()
+    }
+})
+
+sec.addEventListener('keypress', e =>{
+    if(!checkChar(e)){
+        e.preventDefault()
+    }
+})
+
+// Verifica se é número
+function checkChar(e){
+    const char = String.fromCharCode(e.keyCode)
+    console.log(char)
+
+    const pattern = `[0-9]`
+
+    if(char.match(pattern)){
+        return true
+    }
+}
+
+
