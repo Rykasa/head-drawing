@@ -321,8 +321,16 @@ const continueBtn = document.querySelector('.continue-btn')
 startBtn.addEventListener('click', () => {
     modal.classList.toggle('change')
     changeReference()
-    minutes = min.value
-    seconds = sec.value
+    if(min.value == ""){
+        minutes = 3
+    }else{
+        minutes = min.value
+    }
+    if(sec.value == ""){
+        seconds = 0
+    }else{
+        seconds = sec.value
+    }
     start()
 })
 
