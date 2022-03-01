@@ -315,8 +315,6 @@ const time = document.querySelector('.time')
 const img = document.querySelector('.reference-img')
 const pauseBtn = document.querySelector('.pause-btn')
 const skipBtn = document.querySelector('.skip-btn')
-const resume = document.querySelector('.continue')
-const continueBtn = document.querySelector('.continue-btn')
 
 startBtn.addEventListener('click', () => {
     modal.classList.toggle('change')
@@ -356,11 +354,6 @@ function pause(){
         pauseBtn.classList.remove('paused')
     }
 }
-
-continueBtn.addEventListener('click', () => {
-    resume.classList.remove('change')
-    start()
-})
 
 skipBtn.addEventListener('click', () => {
     clearInterval(int)
