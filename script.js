@@ -340,9 +340,22 @@ stopBtn.addEventListener('click', () => {
 })
 
 pauseBtn.addEventListener('click', () => {
-    clearInterval(int)
-    resume.classList.add('change')
+    // clearInterval(int)
+    // resume.classList.add('change')
+    pause()
 })
+
+function pause(){
+    if(!pauseBtn.classList.contains('paused')){
+        clearInterval(int)
+        pauseBtn.textContent = "Continuar"
+        pauseBtn.classList.add('paused')
+    }else{
+        start()
+        pauseBtn.textContent = "Pausar"
+        pauseBtn.classList.remove('paused')
+    }
+}
 
 continueBtn.addEventListener('click', () => {
     resume.classList.remove('change')
