@@ -319,16 +319,20 @@ const skipBtn = document.querySelector('.skip-btn')
 startBtn.addEventListener('click', () => {
     modal.classList.toggle('change')
     changeReference()
-    if(min.value == ""){
-        minutes = 3
+    if(min.value === ""){
+        min.value = 3
+        minutes = min.value
     }else{
         minutes = min.value
     }
-    if(sec.value == ""){
-        seconds = 0
+
+    if(sec.value === ""){
+        sec.value = 0
+        seconds = sec.value
     }else{
         seconds = sec.value
     }
+
     start()
 })
 
