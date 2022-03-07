@@ -128,7 +128,7 @@ main{
     width: 40rem;
     height: 50rem;
     object-fit: cover;
-    transition: transform .3s;
+    /* transition: transform .3s; */
 }
 
 img.flip{
