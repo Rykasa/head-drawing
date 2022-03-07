@@ -315,6 +315,7 @@ const time = document.querySelector('.time')
 const img = document.querySelector('.reference-img')
 const pauseBtn = document.querySelector('.pause-btn')
 const skipBtn = document.querySelector('.skip-btn')
+const rotateBtn = document.querySelector('.rotate-btn')
 
 startBtn.addEventListener('click', () => {
     modal.classList.toggle('change')
@@ -334,6 +335,11 @@ startBtn.addEventListener('click', () => {
     }
 
     start()
+})
+
+rotateBtn.addEventListener('click', () =>{
+    img.classList.toggle('flip')
+    rotateBtn.classList.toggle('flip')
 })
 
 stopBtn.addEventListener('click', () => {
@@ -369,6 +375,10 @@ skipBtn.addEventListener('click', () => {
 
 function changeReference(){
     img.src = references[Math.floor(Math.random() * references.length)].src
+    img.classList.contains('flip') && img.classList.remove('flip')
+    if(rotateBtn.classList.contains('flip')){
+        rotateBtn.classList.remove('flip')
+    }
 }
 
 let seconds

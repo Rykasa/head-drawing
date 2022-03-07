@@ -128,11 +128,19 @@ main{
     width: 40rem;
     height: 50rem;
     object-fit: cover;
+    transition: transform .3s;
+}
+
+img.flip{
+    transform: rotateY(180deg);
+}
+
+.rotate-btn.flip{
+    box-shadow: inset .2rem .2rem 2rem aqua;
 }
 
 .buttons{
     margin-top: 2rem;
-    
 }
 
 .btn{
@@ -186,7 +194,7 @@ main{
 .time{
     font-size: 2.5rem;
     color: #fff;
-    padding-right: 3rem;
+    padding: 0 3rem;
     letter-spacing: .2rem;
 }
 
