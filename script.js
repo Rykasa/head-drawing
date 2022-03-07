@@ -377,7 +377,7 @@ let minutes
 let int
 
 function start(){
-    int = setInterval(watch, 1000)
+    int = setInterval(countdown, 1000)
 }
 
 function stop(){
@@ -387,7 +387,7 @@ function stop(){
     time.textContent = "00:00"
 }
 
-function watch(){
+function countdown(){
     seconds--
     if(seconds < 0){
         minutes--
