@@ -344,7 +344,7 @@ rotateBtn.addEventListener('click', () =>{
 
 stopBtn.addEventListener('click', () => {
     modal.classList.toggle('change')
-    clearInterval(int)
+    stop()
 })
 
 pauseBtn.addEventListener('click', () => {
@@ -378,6 +378,10 @@ function changeReference(){
     img.classList.contains('flip') && img.classList.remove('flip')
     if(rotateBtn.classList.contains('flip')){
         rotateBtn.classList.remove('flip')
+    }
+    if(pauseBtn.classList.contains('paused')){
+        pauseBtn.textContent = "Pausar"
+        pauseBtn.classList.remove('paused')
     }
 }
 
