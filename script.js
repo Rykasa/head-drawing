@@ -403,7 +403,10 @@ function stop(){
     minutes = 0
     time.textContent = "00:00"
 }
-const sound = new Audio('Maid.mp3')
+
+const sound = new Audio('Tohka Shiori Attention Question.mp3')
+sound.volume = 0.6
+
 function countdown(){
     seconds--
     if(seconds < 0){
@@ -417,7 +420,7 @@ function countdown(){
         changeReference()
     }
 
-    if(seconds <= 10){
+    if(seconds === 10){
         sound.play()
     }
 
