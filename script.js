@@ -383,6 +383,9 @@ function changeReference(){
         pauseBtn.textContent = "Pausar"
         pauseBtn.classList.remove('paused')
     }
+
+    sound.pause()
+    sound.currentTime = 0
 }
 
 let seconds
@@ -400,7 +403,7 @@ function stop(){
     minutes = 0
     time.textContent = "00:00"
 }
-
+const sound = new Audio('Maid.mp3')
 function countdown(){
     seconds--
     if(seconds < 0){
@@ -412,6 +415,10 @@ function countdown(){
         minutes = min.value
         seconds = sec.value
         changeReference()
+    }
+
+    if(seconds <= 10){
+        sound.play()
     }
 
     time.textContent = twoDigits(minutes) + ":" + twoDigits(seconds)
