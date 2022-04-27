@@ -50,11 +50,11 @@ pauseBtn.addEventListener('click', () => {
 function pause(){
     if(!pauseBtn.classList.contains('paused')){
         clearInterval(int)
-        pauseBtn.textContent = "Continuar"
+        pauseBtn.innerHTML = "<i class='fas fa-play'><i/>"
         pauseBtn.classList.add('paused')
     }else{
         start()
-        pauseBtn.textContent = "Pausar"
+        pauseBtn.innerHTML= "<i class='fas fa-pause'><i/>"
         pauseBtn.classList.remove('paused')
     }
 }
@@ -74,7 +74,7 @@ function changeReference(){
         rotateBtn.classList.remove('flip')
     }
     if(pauseBtn.classList.contains('paused')){
-        pauseBtn.textContent = "Pausar"
+        pauseBtn.innerHTML = "<i class='fas fa-pause'></i>"
         pauseBtn.classList.remove('paused')
     }
 
