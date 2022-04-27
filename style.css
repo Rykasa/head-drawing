@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 html{
     font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --color-0: #000009;
+    --color-1: #064789;
+    --color-2: #427AA1;
+    --color-3: #EBF2FA;
+    --color-4: #D81159;
+    --color-5: #8F2D56;
 }
 
 .study{
@@ -31,56 +42,54 @@ html{
     color: aqua;
 }
 
-main{
-    background-color: cornflowerblue;
+.section-1{
+    background-color: var(--color-1);
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.heading{
-    color: #fff;
-    font-size: 8rem;
-    font-weight: 700;
-    padding-top: 4rem;
-    letter-spacing: .5rem;
-    text-shadow: .2rem .2rem 1rem #000;
-    margin-bottom: 10rem;
-    text-align: center;
-}
-
-.options{
-    background: #ddd;
-    width: 45rem;
-    height: 25rem;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: .1rem .1rem 1rem #ccc;
-    transition: transform .5s;
-    display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
 }
 
-.options:hover{
-    transform: translateY(-1rem);
-    box-shadow: .2rem .2rem 2rem #ccc;
+.section-1-heading{
+    color: var(--color-3);
+    font-size: 8rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1rem;
+    text-shadow: .2rem .2rem 1rem var(--color-0);
+}
+
+.time-interval{
+    background: var(--color-3);
+    width: 40%;
+    height: 30rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: .1rem .1rem 1rem var(--color-0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: box-shadow .5s;
+}
+
+.time-interval:hover{
+    box-shadow: .2rem .2rem 2rem var(--color-0);
 }
 
 .interval{
     outline: none;
-    border: none;
+    border: .2rem solid var(--color-5);
     padding: .5rem;
     border-radius: .5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color:var(--color-0);
 }
 
 .interval::placeholder{
-    font-size: 1.6rem;
-    letter-spacing: .1rem;
-    color: #ccc;
+    font-size: 2rem;
+    color:var(--color-0);
 }
 
 .start-btn{
@@ -89,16 +98,16 @@ main{
     border-radius: .5rem;
     font-size: 2rem;
     text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: .2rem;
-    background-color: cornflowerblue;
-    color: azure;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    background-color: var(--color-5);
+    color: var(--color-3);
     cursor: pointer;
     transition: .5s;
 }
 
 .start-btn:hover{
-    background-color: skyblue;
+    background-color: var(--color-4);
 }
 
 .modal{
