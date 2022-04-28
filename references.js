@@ -1,13 +1,13 @@
 export const references = [
     {
         id: 1,
-        src: 'mikasa.jpg',
-        view: "3/4"
+        src: 'https://i.pinimg.com/564x/43/4e/8d/434e8d53224a023ea1c91d43793609f3.jpg',
+        view: "front"
     },
     {
         id: 2,
-        src: 'ley-bowen-.jpg',
-        view: "3/4"
+        src: 'https://i.pinimg.com/564x/02/de/3f/02de3f89d7471996777eea4aef74f093.jpg',
+        view: "profile"
     },
     {
         id: 3,
