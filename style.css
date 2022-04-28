@@ -197,4 +197,138 @@ img.flip{
     font-weight: 600;
 }
 
+/* Responsive*/
+@media (max-width: 1500px){
+    .section-1-heading{
+        font-size: 6rem;
+    }
 
+    .time-interval{
+        width: 45%;
+        height: 30rem;
+    }
+
+    .reference-img {
+        width: 35rem;
+        height: 50rem;
+    }
+
+    .btn {
+        height: 4rem;
+        width: 4rem;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    
+    .stop-btn,
+    .skip-btn {
+        width: 10rem;
+        font-size: 2rem;
+        top: 2rem;
+    }
+    
+    .stop-btn {
+        right: 2rem;
+    }
+    
+    .skip-btn {
+        right: 14rem;
+    }
+    
+    .time {
+        font-size: 2.2rem;
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width: 1200px){
+    .section-1-heading {
+        font-size: 5rem;
+    }
+    
+    .time-interval {
+        width: 55%;
+        height: 25rem;
+    }
+
+    .reference-img {
+        width: 30rem;
+        height: 45rem;
+        object-fit: contain;
+    }
+
+    .btn {
+        height: 3rem;
+        width: 3rem;
+        padding: .5rem;
+        font-size: 1.5rem;
+    }
+    
+    .stop-btn,
+    .skip-btn {
+        width: 8rem;
+        font-size: 1.5rem;
+        top: 1rem;
+    }
+    
+    .stop-btn {
+        right: 2rem;
+    }
+    
+    .skip-btn {
+        right: 12rem;
+    }
+    
+    .time {
+        font-size: 2rem;
+        padding: 0 2rem;
+    }
+}
+
+@media (max-width: 800px){
+    .section-1-heading {
+        font-size: 4rem;
+    }
+
+    .time-interval {
+        width: 70%;
+    }
+
+    .interval {
+        padding: .5rem;
+        font-size: 1.8rem;
+    }
+
+    .start-btn {
+        padding: .5rem;
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 500px) {
+    html{
+        font-size: 50%;
+    }
+} 
+
+@media (max-width: 450px){
+    html{
+        font-size: 45%;
+    }
+
+    .section-1-heading {
+        font-size: 3rem;
+    }
+    
+    .time-interval {
+        width: 80%;
+    }
+}
+/* End of Responsive */
