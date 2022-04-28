@@ -145,7 +145,7 @@ img.flip{
 }
 
 .rotate-btn.flip{
-    box-shadow: inset .2rem .2rem 2rem aqua;
+    background-color: var(--color-4);
 }
 
 .buttons{

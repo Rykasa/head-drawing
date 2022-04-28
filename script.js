@@ -42,8 +42,6 @@ stopBtn.addEventListener('click', () => {
 })
 
 pauseBtn.addEventListener('click', () => {
-    // clearInterval(int)
-    // resume.classList.add('change')
     pause()
 })
 
@@ -52,10 +50,12 @@ function pause(){
         clearInterval(int)
         pauseBtn.innerHTML = "<i class='fas fa-play'><i/>"
         pauseBtn.classList.add('paused')
+        pauseBtn.style.backgroundColor = '#D81159'
     }else{
         start()
         pauseBtn.innerHTML= "<i class='fas fa-pause'><i/>"
         pauseBtn.classList.remove('paused')
+        pauseBtn.style.backgroundColor = '#8F2D56'
     }
 }
 
@@ -73,9 +73,11 @@ function changeReference(){
     if(rotateBtn.classList.contains('flip')){
         rotateBtn.classList.remove('flip')
     }
+    
     if(pauseBtn.classList.contains('paused')){
         pauseBtn.innerHTML = "<i class='fas fa-pause'></i>"
         pauseBtn.classList.remove('paused')
+        pauseBtn.style.backgroundColor = '#8F2D56'
     }
 
     sound.pause()
